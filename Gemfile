@@ -100,7 +100,7 @@ gem "omniauth-rails_csrf_protection", ">= 2.0"
 gem "omniauth_openid_connect"
 gem "omniauth-google-oauth2"
 gem "omniauth-github"
-gem "omniauth-saml", "~> 2.1"
+gem "omniauth-saml", "~> 2.2"
 
 # State machines
 gem "aasm"
