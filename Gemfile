@@ -108,7 +108,7 @@ gem "after_commit_everywhere", "~> 1.0"
 
 # AI
 gem "ruby-openai"
-gem "anthropic", "~> 1.0"
+gem "anthropic", "~> 2.6"
 gem "opentelemetry-sdk", "~> 1.13"
 gem "opentelemetry-exporter-otlp", "~> 0.36"
 
