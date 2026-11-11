@@ -65,7 +65,7 @@ jobs:
       alias_note: ${{ steps.release.outputs.alias_note }}
       image_tags: ${{ steps.release.outputs.image_tags }}
     steps:
-      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
           ref: ${{ github.event.inputs.ref || github.sha }}
@@ -178,7 +178,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
           ref: ${{ needs.prepare.outputs.commit }}
@@ -265,7 +265,7 @@ jobs:
       packages: write
 
     steps:
-      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         if: needs.prepare.outputs.release == 'true' && needs.prepare.outputs.compatibility_version != ''
       - name: Create or verify compatibility tag
         id: compatibility
