@@ -115,7 +115,7 @@ jobs:
           helm package charts/sure --version "$COMPATIBILITY_VERSION" --app-version "$APP_VERSION" -d .cr-release-packages
 
       - name: Upload packaged chart artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: helm-chart-package
           path: .cr-release-packages/*.tgz

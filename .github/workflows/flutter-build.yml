@@ -137,7 +137,7 @@ jobs:
           fi
 
       - name: Upload APK artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: app-release-apk
           path: |
@@ -153,7 +153,7 @@ jobs:
 
       - name: Upload AAB artifact
         if: steps.check_secrets.outputs.has_keystore == 'true'
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: app-release-aab
           path: mobile/build/app/outputs/bundle/release/app-release.aab
@@ -231,7 +231,7 @@ jobs:
           echo "For distribution, you need to configure code signing with Apple certificates" >> build/ios-build-info.txt
 
       - name: Upload iOS build artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: ios-build-unsigned
           path: |
